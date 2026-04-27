@@ -7,11 +7,10 @@ This project introduces a time-series deep learning model to perform predictive 
 The analysis uses the **DAMADICS benchmark dataset** collected from the Lublin Sugar Factory. It comprises 2.16 million continuous records across 32 sensor variables. To manage high-frequency noise and non-stationary production loads, a Rolling Moving Average was applied, and statistical profiling was used to isolate key thermodynamic and mechanical signals.
 
 ## Modeling
-
-* **LSTM + CUSUM:** A Long Short-Term Memory network processes strictly causal Cumulative Sum (CUSUM) features to capture long-term wear patterns and forecast continuous RUL without target leakage.
+**LSTM + CUSUM:** A Long Short-Term Memory network processes strictly causal Cumulative Sum (CUSUM) features to capture long-term wear patterns and forecast continuous RUL without target leakage.
 
 ## Key Results
-* **Prognostic Performance:** Achieved an R² of 0.9971 and an RMSE of 0.0154 for continuous RUL prediction.
+**Prognostic Performance:** Achieved an R² of 0.9971 and an RMSE of 0.0154 for continuous RUL prediction.
 
 ## Repository Structure
 * `merged_data.ipynb`: Combines all 25 days' datasets.
